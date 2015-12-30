@@ -1,0 +1,99 @@
+/* Basic */
+/* BASS CSS Overides */
+
+@font-face {
+  font-family: 'NexaRust';
+  src: url('../fonts/nexarustsans-black-free-webfont.eot'), /* IE9 Compat Modes */
+       url('../fonts/nexarustsans-black-free-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/nexarustsans-black-free-webfont.woff2') format('woff2'), /* Pretty Modern Browsers */
+       url('../fonts/nexarustsans-black-free-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+
+.logo{
+	font-family: 'NexaRust', sans-serif;
+	font-size: 1.5em;
+}
+
+.logo-lg{
+	font-family: 'NexaRust', sans-serif;
+	font-size: 4.5em;
+  text-shadow: 3px 3px 1px gray;
+}
+
+.logo-sm{
+  font-family: 'NexaRust', sans-serif;
+  font-size: 3.5em;
+  text-shadow: 3px 3px 1px gray;
+}
+
+.lsp {
+  letter-spacing: 1.5px;
+}
+
+.business{
+  font-family: 'NexaRust', sans-serif;
+  font-size: 4em;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../images/Montauk_Point_Lighthouse.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+
+/*
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+*/
+
+
+
